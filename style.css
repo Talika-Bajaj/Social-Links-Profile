@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -10,4 +13,84 @@
     --Grey: hsl(0, 0%, 20%);
     --Dark_Grey: hsl(0, 0%, 12%);
     --Off_Black: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Off_Black);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--Dark_Grey);
+    color: var(--White);
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 380px;
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img img {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.heading {
+    cursor: pointer;
+}
+
+.name {
+    font-size: 21px;
+}
+
+.place {
+    font-size: 16px;
+    margin-top: 8px;
+    color: var(--Green);
+    font-weight: 400;
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.p1 {
+    font-size: 15px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list li {
+    list-style-type: none;
+    background-color: var(--Grey);
+    padding: 12px 15px;
+    border-radius: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.list li:hover {
+    background-color: var(--Off_Black);
+}
+
+
+@media screen and (max-width: 390px) {
+    .card {
+        width: 320px;
+    }
 }
