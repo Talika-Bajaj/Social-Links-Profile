@@ -23,49 +23,54 @@ body {
     align-items: center;
 }
 
+main {
+    margin: 50px auto;
+}
+
 .card {
     background-color: var(--Dark_Grey);
     color: var(--White);
-    padding: 30px 40px;
+    padding: 30px;
     border-radius: 15px;
-    width: 380px;
+    width: 85vw;
 }
 
 .info {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .img img {
     cursor: pointer;
     border-radius: 50%;
+    height: 75px;
 }
 
 .heading {
     cursor: pointer;
-}
-
-.name {
-    font-size: 21px;
+    text-align: center;
 }
 
 .place {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 8px;
     color: var(--Green);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .para {
     display: flex;
     flex-direction: column;
     gap: 22px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .p1 {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .list {
@@ -73,15 +78,17 @@ body {
     flex-direction: column;
     gap: 15px;
     text-align: center;
+    width: 100%;
 }
 
 .list li {
     list-style-type: none;
     background-color: var(--Grey);
-    padding: 12px 15px;
+    padding: 13.5px 15px;
     border-radius: 11px;
     font-weight: 600;
     cursor: pointer;
+    font-size: 14px;
     transition: 0.3s ease-in-out;
 }
 
@@ -90,8 +97,9 @@ body {
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (width> 420px) {
     .card {
-        width: 320px;
+        width: 380px;
+        padding: 30px 40px;
     }
 }
